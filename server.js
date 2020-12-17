@@ -3,6 +3,10 @@ const dbConfig = require('./config/db.config')
 
 const db = require("./models");
 const Airport = db.airport;
+const Passenger = db.passenger;
+const Flight = db.flight;
+const Terminal = db.terminal;
+
 
 // db connection
 db.mongoose
