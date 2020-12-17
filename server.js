@@ -28,6 +28,47 @@ const airport = new Airport({
 	opened: "2020-12-15"
 })
 
+const flight1 = new Flight({
+  from: "CDG France",
+  to: "JFK New-York, USA",
+  airline: "American Airlines",
+})
+
+const flight2 = new Flight({
+  from: "CDG France",
+  to: "JFK New-York, USA",
+  airline: "American Airlines",
+})
+
+const airport2 = new Airport({
+	name: "JFK",
+	country: "USA",
+	opened: "1990-12-15"
+})
+
+const terminal = new Terminal({
+	name: "Terminal 1",
+  flights: ["flight1", "flight2"],
+  capacity: 234324,
+})
+
 airport.save()
 console.log("Airport saved", airport)
 // Lets Make and Save our first airport
+
+airport2.save()
+console.log("Airport 2 saved", airport2)
+// Lets Make and Save our second airport
+
+flight1.save()
+console.log("Flight saved", flight1)
+// Lets Make and Save our first flight
+
+flight2.save()
+console.log("Flight 2 saved", flight2)
+// Lets Make and Save our second flight
+
+
+terminal.save()
+console.log("Terminal saved", terminal)
+// Lets Make and Save our second flight
