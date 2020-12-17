@@ -1,6 +1,5 @@
 const dbConfig = require('./config/db.config')
 
-
 const db = require("./models");
 const Airport = db.airport;
 const Passenger = db.passenger;
