@@ -67,7 +67,7 @@ flight2.save()
 console.log("Flight 2 saved", flight2)
 // Lets Make and Save our second flight
 
-
-terminal.save()
-console.log("Terminal saved", terminal)
-// Lets Make and Save our second flight
+airport.terminals.push(terminal)
+console.log("Terminal pushed!", airport)
+console.log("Terminal !", terminal)
+// save terminal to the airport
